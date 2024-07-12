@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Lights Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Traffic Lights Control</h1>
+        </header>
+        <div class="main-content">
+            <div class="status">
+                <h2>Current Status</h2>
+                <p>Mode: {{ mode }}</p>
+                <p>Current State: {{ state }}</p>
+            </div>
+            <div class="sensor-data">
+                <h2>Sensor Data</h2>
+                <p>Temperature: {{ temperature if temperature is not none else 'N/A' }} °C</p>
+                <p>Humidity: {{ humidity if humidity is not none else 'N/A' }} %</p>
+                <p>Distance: {{ distance }} cm</p>
+            </div>
+            <div class="controls">
+                <form action="/switch_mode" method="POST">
+                    <button type="submit">Switch Mode</button>
+                </form>
+                <form action="/set_state" method="POST">
+                    <label for="state">Set State:</label>
+                    <select name="state" id="state">
+                        <option value="0">Green</option>
+                        <option value="1">Green-Yellow</option>
+                        <option value="2">Red-Yellow</option>
+                        <option value="3">Red</option>
+                    </select>
+                    <button type="submit">Set State</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
