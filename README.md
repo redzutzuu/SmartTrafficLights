@@ -241,10 +241,6 @@ def set_state():
 ## Rezultatul final:
 Proiectul demonstrează un sistem de semaforizare inteligent, capabil să gestioneze traficul eficient, adaptându-se automat la prezența vehiculelor. Sistemul permite și controlul manual, oferind flexibilitate și fiabilitate în diverse scenarii urbane. Utilizarea componentelor accesibile și a unei abordări modulare face ca acest proiect să fie scalabil și ușor de implementat în diverse contexte urbane.
 
-## Link-uri Utilitare
-- Repo-ul cu codul proiectului: [GitHub Repo](https://github.tuiasi.ro/SM24/Semafor-1308A)
-- Documentația proiectului pe GitHub: [GitHub README](https://github.tuiasi.ro/SM24/Semafor-1308A#readme)
-- Documentația proiectului pe hackster.io: [Documentatie hackster.io](https://www.hackster.io/larisa-andreeapetrisor/semafor-492faa)
 
 ### Inspirație:
 - [Sursa 1](https://projects.raspberrypi.org/en/projects/physical-computing/9)
